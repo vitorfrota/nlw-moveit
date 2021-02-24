@@ -1,4 +1,5 @@
 import Head from 'next/head'
+import { ChallengeBox } from '../components/ChallengeBox';
 
 import { CompletedChallenges } from "../components/CompletedChallenges";
 import { Countdown } from "../components/CountDown";
@@ -14,14 +15,15 @@ export default function Home() {
         <title>Início | Moveit</title>
       </Head>
       <ExperienceBar />
-
       <section>
         <div>
           <Profile />
           <CompletedChallenges />
           <Countdown />
         </div>
-        <div></div>
+        <div>
+          <ChallengeBox />
+        </div>
       </section>
     </div>
   )
