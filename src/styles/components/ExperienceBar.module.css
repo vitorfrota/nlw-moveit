@@ -9,7 +9,7 @@
 
 .experienceBar > div {
     flex: 1;
-    height: 4px;
+    height: 6px;
     border-radius: 4px;
     background: var(--gray-line);
     margin: 0 1.5rem;
@@ -17,13 +17,15 @@
 }
 
 .experienceBar > div > div {
-    height: 4px;
+    height: 6px;
     border-radius: 4px;
     background: var(--green);
+    transition: all 800ms;
 }
 
 span.currentExperience {
     position: absolute;
     top: 12px;
     transform: translateX(-50%);
+    transition: all 800ms;
 }
