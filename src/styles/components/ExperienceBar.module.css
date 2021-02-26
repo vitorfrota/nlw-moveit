@@ -1,6 +1,8 @@
 .experienceBar{
     display: flex;
-    align-items: center;
+    align-items: flex-end;
+    background: rgba(120,120,120, 0.25);
+    padding: 1rem;
 }
 
 .experienceBar span {
@@ -9,18 +11,37 @@
 
 .experienceBar > div {
     flex: 1;
-    height: 6px;
-    border-radius: 4px;
-    background: var(--gray-line);
-    margin: 0 1.5rem;
+    height: 10px;
+    background: rgba(255, 109, 16, 0.50);
+    margin-right: 0.5rem;
     position: relative;
 }
 
 .experienceBar > div > div {
-    height: 6px;
-    border-radius: 4px;
-    background: var(--green);
+    height: 10px;
+    background:rgb(255, 109, 16);
     transition: all 800ms;
+}
+
+.experienceBar > p {
+    padding: 0.75rem;
+    height: 3.5rem;
+    width: auto;
+    background: rgba(255, 109, 16, 0.50);
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    font-family: Rajdhani;
+    font-weight: 600;
+    font-size: 2rem;
+    transition: all 1s;
+}
+
+.experienceBar > p > span {
+    margin-left: 0.25rem;
+    color: #ddd;
 }
 
 span.currentExperience {
