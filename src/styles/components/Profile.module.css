@@ -1,29 +1,36 @@
 .profileContainer {
-    display: flex;
-    align-items: center;
+  display: flex;
+  align-items: center;
 }
 
 .profileContainer > img {
-    width: 5.5rem;
-    height: 5.5rem;
-    border-radius: 50%;
+  width: 5rem;
+  height: 5rem;
+  border-radius: 50%;
+  border: 5px solid var(--orange);
 }
 
 .profileContainer div {
-    margin-left: 1.5rem;
+  margin-left: 1rem;
 }
 
 .profileContainer div strong {
-    font-size: 1.5rem;
-    font-weight: 400;
-    color: var(--title);
+  font-size: 1.5rem;
+  font-family: Rajdhani;
+  font-weight: 600;
+  color: var(--orange);
 }
 
 .profileContainer div p {
-    font-size: 1rem;
-    margin-top: 0.5rem;
+  font-size: 1rem;
+  color: var(--text);
+  display: flex;
+  align-items: center;
 }
 
-.profileContainer div p img {
-    margin-right: 0.5rem;
+.profileContainer div p svg {
+  margin-right: 0.75rem;
+  width: 1.5rem;
+  height: 1.5rem;
+  color: var(--white);
 }

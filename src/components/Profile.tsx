@@ -1,5 +1,6 @@
 import { useContext } from 'react'
 import { ChallengesContext } from '../contexts/ChallengeContext'
+import { FiArrowUpRight } from 'react-icons/fi'
 import styles from '../styles/components/Profile.module.css'
 
 export default function Profile(){
@@ -11,7 +12,7 @@ export default function Profile(){
                <strong>Vitor Frota</strong> 
                
                <p>
-                 <img src="icons/level.svg" alt=""/>
+                 <FiArrowUpRight />
                   Level { level }
                 </p>
             </div>
