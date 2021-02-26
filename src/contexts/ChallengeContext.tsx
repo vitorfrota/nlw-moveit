@@ -68,8 +68,8 @@ export function ChallengesProvider({ children, ...rest }: ChallengeProviderProps
         new Audio('/notification.mp3').play();
 
         if(Notification.permission === 'granted'){
-            new Notification('Novo desafio 🎉', {
-                body: `Valendo ${challenge.amount}xp`
+            new Notification('Nova missão disponível', {
+                body: `Ganhe ${challenge.amount}xp concluindo esta missão`
             })
         }
     }

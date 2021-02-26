@@ -6,7 +6,7 @@
 
   font-weight: 500;
 
-  border: 1px solid rgba(130, 130, 130, 0.25);
+  border: 1px solid var(--gray);
 }
 
 .completedChallengesContainer > div {
@@ -14,7 +14,7 @@
   align-items: center;
   justify-content: space-between;
 
-  background: rgba(130, 130, 130, 0.25);
+  background: var(--gray);
 
   padding: 0.5rem 1rem;
 }

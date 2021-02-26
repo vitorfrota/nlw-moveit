@@ -6,12 +6,11 @@
 
 :root {
   --white: #fff;
-  --background: #252525;
-  --gray-line: #dcdde0;
-  --text: #aaa;
-  --title: #2e384d;
+  --gray: rgba(50, 50, 50, 0.25);
+  --background: #181818;
+  --gray-line: #898b8b;
+  --text: #ccc;
   --red: #e83902;
-  --green: #4cd62b;
   --orange: #ff6c10;
   --orange-dark: #cc560c;
 }
@@ -41,6 +40,7 @@ button {
 }
 
 button {
+  outline: none;
   cursor: pointer;
 }
 

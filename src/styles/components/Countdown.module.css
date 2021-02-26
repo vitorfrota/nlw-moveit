@@ -5,11 +5,8 @@
   font-weight: 600;
   color: var(--white);
 
-  background-image: linear-gradient(
-      rgba(130, 130, 130, 0.25) 2px,
-      transparent 2px
-    ),
-    linear-gradient(90deg, rgba(130, 130, 130, 0.25) 2px, transparent 2px);
+  background-image: linear-gradient(var(--gray) 2px, transparent 2px),
+    linear-gradient(90deg, var(--gray) 2px, transparent 2px);
   background-size: 25px 25px, 25px 25px, 25px 25px, 25px 25px;
   background-position: -5px;
   border-top: 1px solid var(--gray-line);
@@ -64,8 +61,8 @@
 }
 
 .countDownButtonActive {
-  background: var(--white);
-  color: var(--title);
+  background: var(--gray-line);
+  color: var(--white);
 }
 
 .countDownButtonActive:not(:disabled):hover {
@@ -74,7 +71,7 @@
 }
 
 .countDownButton:disabled {
-  background: rgba(130, 130, 130, 0.25);
+  background: var(--gray);
   color: var(--text);
   cursor: not-allowed;
 }

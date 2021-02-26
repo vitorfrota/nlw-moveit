@@ -1,7 +1,7 @@
 .experienceBar {
   display: flex;
   align-items: flex-end;
-  background: rgba(130, 130, 130, 0.25);
+  background: var(--gray);
   padding: 1rem;
 }
 

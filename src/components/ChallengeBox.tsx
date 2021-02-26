@@ -1,7 +1,14 @@
 import { useContext } from 'react';
+import { FiEye, FiUser, FiChevronsUp } from 'react-icons/fi';
 import { ChallengesContext } from '../contexts/ChallengeContext';
 import { CountdownContext } from '../contexts/CountdownContext';
 import styles from '../styles/components/ChallengeBox.module.css';
+
+
+const icons = {
+    body: <FiUser />,
+    eye: <FiEye />
+}
 
 export function ChallengeBox(){
     const { activeChallenge, resetChallenge, completeChallenge } = useContext(ChallengesContext);
@@ -22,11 +29,13 @@ export function ChallengeBox(){
            {
                activeChallenge ? (
                    <div className={styles.challengeActive}>
-                    <header>Ganhe {activeChallenge.amount} xp</header>
+                    <header>Sua nova missão</header>
                     <main>
-                        <img src={`icons/${activeChallenge.type}.svg`} alt=""/>
-                        <strong>Novo desafio</strong>
-                        <p>{activeChallenge.description}</p>
+                        <div>
+                            {icons[activeChallenge.type]}
+                            <strong>XP +{activeChallenge.amount}</strong>
+                        </div>
+                        <p>{activeChallenge.description}</p>  
                     </main>
                     <footer>
                         <button
@@ -34,23 +43,23 @@ export function ChallengeBox(){
                             className={styles.challengeFailedButton}
                             onClick={handleChallengeFailed}
                         >
-                            Falhei
+                            Cancelar
                         </button>
                         <button
                          type="button"
                          className={styles.challengeSuccededButton}
                          onClick={handleChallengeSucceded}
                         >
-                            Completei
+                            Concluir
                         </button>
                     </footer>
                    </div>
                ) : (
                 <div className={styles.challengeNotActive}>
-                    <strong>Finalize um ciclo para receber um desafio</strong>
+                    <strong>Nenhuma missão disponível</strong>
                     <p>
-                        <img src="icons/level-up.svg" alt="" />
-                        <span>Avance de level completando os desafios</span>
+                        <FiChevronsUp />
+                        <span>Conclua um ciclo para ter novas missões</span>
                     </p>
                 </div>
                )
