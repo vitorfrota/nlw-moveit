@@ -3,8 +3,6 @@
 
   background: var(--gray);
 
-  border-top: 1px solid var(--gray-line);
-
   display: flex;
   align-items: center;
   justify-content: center;
@@ -58,8 +56,6 @@
   font-family: Rajdhani;
   text-transform: uppercase;
   padding: 1rem 0;
-
-  border-bottom: 1px solid var(--gray-line);
 }
 
 .challengeActive main {
@@ -87,7 +83,7 @@
   font-size: 2rem;
   font-family: Rajdhani;
   color: var(--orange);
-  margin: 1rem;
+  margin-top: 1.5rem;
 }
 
 .challengeActive main p {

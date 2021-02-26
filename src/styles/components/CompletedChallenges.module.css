@@ -7,6 +7,8 @@
   font-weight: 500;
 
   border: 1px solid var(--gray);
+
+  transition: all 150ms;
 }
 
 .completedChallengesContainer > div {
@@ -22,6 +24,11 @@
 .completedChallengesContainer > div > span {
   font-family: Rajdhani;
   font-size: 1.5rem;
+}
+
+.completedChallengesContainer > div > span::before {
+  content: "0";
+  color: var(--gray-line);
 }
 
 .completedChallengesContainer > footer {

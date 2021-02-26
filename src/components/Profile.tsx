@@ -12,8 +12,9 @@ export default function Profile(){
                <strong>Vitor Frota</strong> 
                
                <p>
-                 <FiArrowUpRight />
-                  Level { level }
+                  <FiArrowUpRight />
+                  Level 
+                  <span>{ level }</span>
                 </p>
             </div>
         </div>
